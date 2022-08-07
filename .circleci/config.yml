@@ -16,10 +16,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run
-        name: Print out Variable
-        command: | 
-          echo ${MY_NAME}
+      - run: echo ${MY_NAME}
   print_pipelinedetails:
     docker:
       - image: circleci/node:13.8.0
