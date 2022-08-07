@@ -17,7 +17,7 @@ jobs:
     steps:
       - checkout
       - run
-        name: "Print out Variable"
+        name: Print out Variable
         command: | 
           echo ${MY_NAME}
   print_pipelinedetails:
