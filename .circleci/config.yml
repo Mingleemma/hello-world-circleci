@@ -15,7 +15,8 @@ jobs:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - run:
+      - checkout
+      - run
         name: "Print out Variable"
         command: | 
           echo ${MY_NAME}
